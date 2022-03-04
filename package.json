@@ -1,0 +1,28 @@
+{
+  "name": "@garsaud/tabletocsv",
+  "description": "Simply convert a table into a CSV representation",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "table",
+    "csv",
+    "conversion",
+    "spreadsheet"
+  ],
+  "homepage": "https://github.com/garsaud/tableToCsv",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/garsaud/tableToCsv.git"
+  },
+  "main": "tableToCsv.js",
+  "files": [
+    "tableToCsv.js"
+  ],
+  "author": "Cyril Garsaud <cyril.garsaud@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/garsaud/tableToCsv/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
