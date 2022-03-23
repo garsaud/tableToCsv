@@ -5,6 +5,7 @@
             'filename': 'table.csv',
             'cellSeparator': ',',
             'rowSeparator': '\n',
+            'insertBOM': true,
         }, options);
 
         var _textContent = '';
@@ -42,6 +43,9 @@
                 });
 
                 _textContent = textRows.join(_options.rowSeparator);
+                if (_options.insertBOM) {
+                    _textContent = "\ufeff"+_textContent;
+                }
             },
             download(filename) {
                 return downloadCSVFile(_textContent, filename || _options.filename);

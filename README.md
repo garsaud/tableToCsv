@@ -43,6 +43,15 @@ const csv = new TableToCsv(document.querySelector('table'));
 csv.download();
 ```
 
+A csv file is downloaded, containing:
+
+```csv
+"First Name","Last Name","Age"
+"Eustache","Beaugenoux","65"
+"Aristide","Rouquitourne","46"
+"Gersande","De Ronflefort","78"
+```
+
 A few options are available:
 
 ```js
@@ -50,6 +59,10 @@ const csv = new TableToCsv(node, {
     filename: 'table.csv',
     cellSeparator: ',',
     rowSeparator: '\n',
+
+    // in case your cells contains UTF-8 special characters, for Excel to render
+    // them correctly:
+    insertBOM: true,
 });
 ```
 
@@ -61,5 +74,5 @@ const csv = new TableToCsv(…);
 // table changes...
 
 csv.refresh();
-csv.download();
+csv.download('filename.csv');
 ```

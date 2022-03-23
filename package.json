@@ -1,7 +1,7 @@
 {
   "name": "@garsaud/tabletocsv",
   "description": "Simply convert a table into a CSV representation",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "keywords": [
     "table",
